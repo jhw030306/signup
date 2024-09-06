@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+    <div class="title">
+        <h1>SIGN UP</h1>
+    </div>
+    <div class="information">
+        <p>아이디</p>
+        <div class="id-container">
+            <input type="text" id="userId" placeholder="아이디 입력(6~20자)">
+            <button id="checkIdBtn">중복 확인</button>
+        </div>
+        <p id="idError" class="error-text"></p> <!-- 아이디 중복 확인 에러 메시지 -->
+        
+        <div class="password">
+            <p>비밀번호</p>
+            <input type="password" id="password" placeholder="비밀번호 입력(대소문자, 숫자, 특수문자 포함 8~20글자)">
+            <p id="passwordError" class="error-text"></p> <!-- 비밀번호 에러 메시지 -->
+
+            <p>비밀번호 확인</p>
+            <input type="password" id="passwordConfirm" placeholder="비밀번호 재입력">
+            <p id="passwordConfirmError" class="error-text"></p> <!-- 비밀번호 확인 에러 메시지 -->
+        </div>
+        <div class="email">
+            <p>전화번호</p>
+            <input type="tel" id="phone" placeholder="핸드폰 번호 입력('-' 제외 11글자)">
+        </div>
+        <div class="email">
+            <p>이메일</p>
+            <input type="email" id="email" placeholder="이메일 주소.">
+        </div>
+    </div>
+    <div class="button">
+        <button type="submit" id="signupBtn" class="login__button" disabled>가입하기</button>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
